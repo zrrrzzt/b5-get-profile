@@ -1,0 +1,54 @@
+{
+  "name": "b5-get-profile",
+  "version": "1.0.0",
+  "description": "Profile page for you bigfive tests",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "contributors": [
+    {
+      "name": "Jonas Enge",
+      "email": "jonas.enge@gmail.com",
+      "url": "https://github.com/maccyber"
+    }
+  ],
+  "keywords": [
+    "bigfive",
+    "personality",
+    "IPIP",
+    "next",
+    "profile"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zrrrzzt/b5-get-profile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zrrrzzt/b5-get-profile/issues"
+  },
+  "homepage": "https://github.com/zrrrzzt/b5-get-profile",
+  "engines": {
+    "node": ">=7.9.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix"
+  },
+  "devDependencies": {
+    "ava": "0.19.1",
+    "coveralls": "2.13.0",
+    "nsp": "2.6.3",
+    "nyc": "10.2.0",
+    "standard": "10.0.2"
+  },
+  "dependencies": {
+    "cookie": "0.3.1"
+  }
+}
