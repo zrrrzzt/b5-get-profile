@@ -2,7 +2,7 @@
 
 const cookie = require('cookie')
 
-module.exports = request => {
+const getProfile = request => {
   const parsed = request && request.headers ? cookie.parse(request.headers.cookie) : false
   let tmp = parsed.profile
   let profile = false
@@ -13,3 +13,7 @@ module.exports = request => {
   }
   return profile
 }
+
+module.exports = getProfile
+
+exports.default = getProfile
