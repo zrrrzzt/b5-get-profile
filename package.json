@@ -49,6 +49,6 @@
     "standard": "16.0.4"
   },
   "dependencies": {
-    "cookie": "0.4.1"
+    "cookie": "0.5.0"
   }
 }
